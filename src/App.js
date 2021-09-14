@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import OptionDropdown from './OptionDropdown';
 
 function App() {
   const [weight, setWeight] = useState(0);
@@ -43,24 +44,14 @@ function App() {
             <label>Bottles</label><br />
             <select name="bottles" type="number" step="1" value={bottles}
               onChange={e => setBottles(e.target.value)} >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
+                <OptionDropdown />
             </select>
           </div>
           <div>
             <label>Time</label><br />
             <select name="time" type="number" step="1" value={time}
               onChange={e => setTime(e.target.value)} >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
+                <OptionDropdown />
             </select>
           </div>
           <div>
